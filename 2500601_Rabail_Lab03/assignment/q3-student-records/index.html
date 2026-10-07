@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <main class="dashboard">
+
+        <header class="header">
+            <div>
+                <span class="tag">ACADEMIC DASHBOARD</span>
+                <h1>Student Performance</h1>
+                <p>Manage student records and monitor academic performance.</p>
+            </div>
+            <div class="header-icon">🎓</div>
+        </header>
+
+        <section class="entry-card">
+            <h2>Add Student Record</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" placeholder="Enter student name">
+                </div>
+
+                <div class="input-group">
+                    <label for="rollNo">Roll Number</label>
+                    <input type="text" id="rollNo" placeholder="e.g. FSWD-06">
+                </div>
+
+                <div class="input-group">
+                    <label for="marks">Marks</label>
+                    <input type="number" id="marks" min="0" max="100" placeholder="0 - 100">
+                </div>
+
+                <button id="addStudent">Add Student</button>
+
+            </div>
+
+            <div id="message"></div>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-icon">👥</span>
+                <div>
+                    <p>Total Students</p>
+                    <h3 id="totalStudents">0</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">📊</span>
+                <div>
+                    <p>Class Average</p>
+                    <h3 id="classAverage">0.0</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">🏆</span>
+                <div>
+                    <p>Top Scorer</p>
+                    <h3 id="topScorer">---</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="records-card">
+
+            <div class="records-header">
+                <div>
+                    <h2>Student Records</h2>
+                    <p>Current class performance overview</p>
+                </div>
+
+                <button id="sortButton">Sort by Marks ↓</button>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Roll No</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTable">
+                    </tbody>
+
+                </table>
+
+                <div id="emptyState">
+                    <div>📋</div>
+                    <h3>No Student Records</h3>
+                    <p>Add your first student above to begin.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

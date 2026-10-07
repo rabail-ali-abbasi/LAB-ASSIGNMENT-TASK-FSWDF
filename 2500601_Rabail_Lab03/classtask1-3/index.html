@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeGlow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <main class="card">
+        <div class="icon">🎓</div>
+
+        <h1>GradeGlow</h1>
+        <p class="subtitle">Turn your marks into a grade</p>
+
+        <label for="name">Student Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="marks">Marks</label>
+        <input type="number" id="marks" min="0" max="100" placeholder="0 - 100">
+
+        <button id="calcBtn">Calculate Grade</button>
+
+        <div id="result"></div>
+    </main>
+
+</body>
+</html>

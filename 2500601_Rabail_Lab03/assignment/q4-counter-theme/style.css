@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    transition: 0.3s;
+}
+
+.counter-card {
+    width: 400px;
+    padding: 35px;
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.theme-button {
+    display: block;
+    margin-left: auto;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 10px;
+    background: #ececff;
+    color: #34358c;
+    cursor: pointer;
+}
+
+.counter-icon {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+h1 {
+    margin-top: 10px;
+    color: #24264f;
+}
+
+p {
+    margin: 8px 0 25px;
+    color: #777;
+}
+
+#count {
+    font-size: 80px;
+    font-weight: bold;
+    color: #5759d9;
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    min-width: 80px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #5759d9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    transform: translateY(-2px);
+}
+
+.dark {
+    background: #111827;
+}
+
+.dark .counter-card {
+    background: #1f2937;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.dark h1 {
+    color: white;
+}
+
+.dark p {
+    color: #aeb4c0;
+}
+
+.dark .theme-button {
+    background: #374151;
+    color: white;
+}
